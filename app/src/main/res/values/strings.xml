@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">R-Course</string>
+    <string name="Fname">Fname</string>
+    <string name="Lname">Lname</string>
+    <string name="yob">YOB</string>
+    <string name="gender">Gender</string>
+    <string name="mas">M</string>
+    <string name="fem">F</string>
+    <string name="Mix">mix</string>
+    <string name="add">ADD</string>
+    <string name="Clear">clear</string>
+</resources>

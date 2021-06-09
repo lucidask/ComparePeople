@@ -1,0 +1,2 @@
+rootProject.name = "R-Course"
+include ':app'
