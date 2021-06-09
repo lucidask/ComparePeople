@@ -4,22 +4,16 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class Person <Person> {
     private String fname;
     private String lname;
     private String yob;
+    private int size;
     private String sex;
 
-    public String getFname() {
-        return fname;
-    }
+    public String getFname() { return fname; }
 
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
+    public void setFname(String fname) { this.fname = fname; }
 
     public String getLname() {
         return lname;
@@ -37,6 +31,14 @@ public class Person <Person> {
         this.yob = yob;
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public String getSex() {
         return sex;
     }
@@ -47,14 +49,15 @@ public class Person <Person> {
 
     @Override
     public String toString() {
-        String inf= getFname().concat(" "+getLname()).concat(" "+getYob()).concat(" "+getSex()+'\n');
+        String inf= "Name: "+getFname().concat(" "+getLname()).concat("\nYOB: "+getYob()).concat(" \nSize: "+getSize()).concat(" cm \nSex: "+getSex()+'\n');
         return inf;
     }
 
-    public Person(String finame, String laname, String year, String s ){
+    public Person(String finame, String laname, String year,int siz, String s ){
         fname=finame;
         lname=laname;
         yob=year;
+        size=siz;
         sex=s;
     }
 
@@ -71,6 +74,20 @@ public class Person <Person> {
         }
         else {
             return "They have the same age ";
+        }
+    }
+
+    public String sizecompare(com.example.r_course.Person PersAnt){
+        if((this.getSize())<(PersAnt.getSize())){
+            return PersAnt.getFname()+" "+PersAnt.getLname()+" is higher than "+
+                    this.getFname()+" "+this.getLname();
+        }
+        else if((this.getSize())>(PersAnt.getSize())) {
+            return this.getFname()+" "+this.getLname()+" is higher than "+
+                    PersAnt.getFname()+" "+PersAnt.getLname();
+        }
+        else {
+            return "They have the same size ";
         }
     }
 }

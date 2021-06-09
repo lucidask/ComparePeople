@@ -9,4 +9,6 @@
     <string name="Mix">mix</string>
     <string name="add">ADD</string>
     <string name="Clear">clear</string>
+    <string name="size">Size</string>
+    <string name="textsize">Size</string>
 </resources>

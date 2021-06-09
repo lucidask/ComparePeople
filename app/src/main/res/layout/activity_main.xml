@@ -90,6 +90,30 @@
                 android:background="@color/white"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="@string/size"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/size"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:hint="centimeter"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="270dp"
@@ -184,4 +208,23 @@
         </ScrollView>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <Switch
+            android:id="@+id/switchAgeSize"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Age"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/textsize"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 </LinearLayout>
